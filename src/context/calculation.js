@@ -61,7 +61,7 @@ export const CalculationContextProvider = (props) => {
         setVal2('');
         setCalculation('');
         setOp(null);
-      } else if((val1 === '') || (val2 === '' && val === '=')){
+      } else if((val1 === '') || (val2 === '' && val === '=' && op !== '%')){
         return;
       } else if(val === '=' && op !== null){
         operation();
